@@ -9,6 +9,7 @@ function Head({ intl }) {
   return (
     <Helmet>
       <title>
+        <h1>Funix-account</h1>
         {intl.formatMessage(messages['account.page.title'], { siteName: getConfig().SITE_NAME })}
       </title>
       <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
