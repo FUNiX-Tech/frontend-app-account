@@ -10,8 +10,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch } from 'react-router-dom';
 
-import Header, { messages as headerMessages } from '@edx/frontend-component-header';
-import Footer, { messages as footerMessages } from '@edx/frontend-component-footer';
+//import Header, { messages as headerMessages } from '@edx/frontend-component-header';
+// import Footer, { messages as footerMessages } from '@edx/frontend-component-footer';
 
 import configureStore from './data/configureStore';
 import AccountSettingsPage, { NotFoundPage } from './account-settings';
@@ -21,6 +21,8 @@ import appMessages from './i18n';
 
 import './index.scss';
 import Head from './head/Head';
+import HeaderLearning from './header/HeaderLearning';
+import Footer from './footer/Footer';
 
 subscribe(APP_READY, () => {
   ReactDOM.render(
@@ -29,7 +31,8 @@ subscribe(APP_READY, () => {
       <Switch>
         <Route path="/coaching_consent" component={CoachingConsent} />
         <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
-          <Header />
+          {/* <Header /> */}
+          <HeaderLearning />
           <main className="flex-grow-1">
             <Switch>
               <Route path="/id-verification" component={IdVerificationPage} />
@@ -38,6 +41,7 @@ subscribe(APP_READY, () => {
               <Route path="*" component={NotFoundPage} />
             </Switch>
           </main>
+          {/* <Footer /> */}
           <Footer />
         </div>
       </Switch>
@@ -53,8 +57,8 @@ subscribe(APP_INIT_ERROR, (error) => {
 initialize({
   messages: [
     appMessages,
-    headerMessages,
-    footerMessages,
+    // headerMessages,
+    // footerMessages,
   ],
   requireAuthenticatedUser: true,
   hydrateAuthenticatedUser: true,

@@ -810,7 +810,6 @@ class AccountSettingsPage extends React.Component {
 
     return (
       <div className="page__account-settings container-fluid py-5">
-        <h1>Funix account setting</h1>
         {this.renderDuplicateTpaProviderMessage()}
         <h1 className="mb-4">
           {this.props.intl.formatMessage(messages['account.settings.page.heading'])}
