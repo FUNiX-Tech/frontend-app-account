@@ -13,22 +13,22 @@ const HeaderLearning = ()=>{
         <div className="d-flex align-items-center course-title-lockup">
           <ul>
             <li>
-              <NavLink
+              {/* <NavLink
                 className="header-dashboard-link"
                 activeClassName="active"
                 end
                 to="/dashboard"
               >
                 Khoá học của tôi
-              </NavLink>
+              </NavLink> */}
             </li>
             <li>
-              <a
+              {/* <a
                 className="header-dashboard-link"
                 href="#"
               >
                 Các khoá khác
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>
