@@ -62,3 +62,11 @@ $fa-font-path: "~font-awesome/fonts";
     font-weight: normal;
   }
 }
+
+.learning-header {
+  position: sticky;
+  // top:0px;
+  background-color: white;
+  z-index: 250000;
+  box-shadow: 0px 2px 4px -1px #0b0b0b0f, 0px 4px 6px -1px #0b0b0b1a;
+}
