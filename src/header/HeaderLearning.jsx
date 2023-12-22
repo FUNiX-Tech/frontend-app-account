@@ -46,6 +46,7 @@ const HeaderLearning = ()=>{
                 className="d-block"
                 src={getConfig().LOGO_URL}
                 alt={getConfig().LOGO_URL}
+                width='67px'
                 />
           </a>
                 </div>
