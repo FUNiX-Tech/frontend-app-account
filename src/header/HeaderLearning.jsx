@@ -35,7 +35,7 @@ const HeaderLearning = ()=>{
       );
 
     return (
-       <header className='learning-header'>
+       <header className='learning-header dashboard'>
             <div className="header1-container d-flex align-items-center">
                 <div className="logo-container">
                 <a
