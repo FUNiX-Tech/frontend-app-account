@@ -35,7 +35,7 @@ const HeaderLearning = ()=>{
       );
 
     return (
-       <header className='learning-header'>
+       <header className='learning-header dashboard'>
             <div className="header1-container d-flex align-items-center">
                 <div className="logo-container">
                 <a
@@ -46,7 +46,7 @@ const HeaderLearning = ()=>{
                 className="d-block"
                 src={getConfig().LOGO_URL}
                 alt={getConfig().LOGO_URL}
-                style={{width: '67px'}}
+                style={{width: '77px', height: '32px'}}
                 />
           </a>
                 </div>
